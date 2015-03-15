@@ -56,6 +56,7 @@
         }
         </style>
         <core-ajax auto url="questions.json" handleAs="json" on-core-response="{{handleResponse}}"></core-ajax>
+        <core-a11y-keys target="{{}}" keys="enter" on-keys-pressed="{{nextQuestion}}"></core-a11y-keys>
         <core-pages selected="0">
             <section>
                 <div class="card" vertical layout>
