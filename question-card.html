@@ -34,6 +34,9 @@
             background-color: #f5f5f5;
             color: #626262;
         }
+        .card > core-toolbar > paper-fab .answered {
+            display: block !important;
+        }
         .card > .answers {
             padding: 16px;
             background-color: #fff;
@@ -62,13 +65,14 @@
                 <div class="card" vertical layout>
                     <core-toolbar class="tall">
                         <div class="question middle" flex>{{question}}</div>
-                        <paper-fab icon="check" on-click="{{nextQuestion}}" bottom></paper-fab>
+                        <paper-fab icon="check" on-click="{{nextQuestion}}" style="visibility: {{displayFab}}"></paper-fab>
                     </core-toolbar>
                     <div class="answers">
                         <paper-radio-group vertical layout
                             id="answersRadioGroup"
+                            selected="{{selectedAnswer}}"
                             on-change="{{questionAnswered}}"
-                            selected="{{selectedAnswer}}">
+                            excludedLocalNames="paper-icon-button">
                             <paper-radio-button name="red" label="{{redAnswer}}"></paper-radio-button>
                             <paper-radio-button name="blue" label="{{blueAnswer}}"></paper-radio-button>
                             <paper-radio-button name="white" label="{{whiteAnswer}}"></paper-radio-button>
@@ -83,7 +87,6 @@
     <script type="text/javascript">
     (function() {
         var number = 0;
-        //var humanNumber = 0;
         var redAnswers = 0;
         var blueAnswers = 0;
         var whiteAnswers = 0;
@@ -97,6 +100,7 @@
                 this.whiteAnswer = "Loading";
                 this.yellowAnswer = "Loading";
                 this.progress = 0;
+                this.displayFab = "hidden";
             },
             ready: function() {
                 console.log("READY!!!");
@@ -105,7 +109,7 @@
             publish: function() {
             },
             updateContent: function() {
-                if (number < 45) {
+                if (number <= 44) {
                     this.question = this.data[number].question;
                     this.redAnswer = this.data[number].choices[0].answer;
                     this.blueAnswer = this.data[number].choices[1].answer;
@@ -127,9 +131,10 @@
                 //console.log(red);
             },
             questionAnswered: function() {
+                this.displayFab = "visible";
             },
             nextQuestion: function() {
-                if (number < 45) { 
+                if (number <= 44) { 
                     number++;
                     if (this.selectedAnswer == "red") {
                         redAnswers++;
@@ -151,6 +156,7 @@
                               "\nYellow: ",yellowAnswers);
                 }
                 this.updateContent();
+                this.displayFab = "hidden";
                 this.selectedAnswer = null;
             }
         });
