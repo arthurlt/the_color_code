@@ -2,6 +2,7 @@
 <link rel="import" href="bower_components/core-pages/core-pages.html">
 <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
 <link rel="import" href="bower_components/core-icons/core-icons.html">
+<link rel="import" href="bower_components/paper-progress/paper-progress.html">
 <link rel="import" href="bower_components/paper-fab/paper-fab.html">
 <link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
 
@@ -37,6 +38,22 @@
             padding: 16px;
             background-color: #fff;
         }
+        paper-radio-button::shadow #ink[checked] {
+            color: #03A9F4;
+        }
+        paper-radio-button::shadow #onRadio {
+            background-color: #03A9F4;
+        }
+
+        paper-radio-button[checked]::shadow #offRadio {
+            border-color: #03A9F4;
+        }
+        .card > paper-progress {
+            width: 100%;
+        }
+        .card > paper-progress::shadow #activeProgress {
+            background-color: #03A9F4;
+        }
         </style>
         <core-ajax auto url="questions.json" handleAs="json" on-core-response="{{handleResponse}}"></core-ajax>
         <core-pages selected="0">
@@ -57,6 +74,7 @@
                             <paper-radio-button name="yellow" label="{{yellowAnswer}}"></paper-radio-button>
                         </paper-radio-group>
                     </div>
+                    <paper-progress value="{{progress}}" min="0" max="45"></paper-progress>
                 </div>
             </section>
         </core-pages>
@@ -64,7 +82,7 @@
     <script type="text/javascript">
     (function() {
         var number = 0;
-        var humanNumber = 0;
+        //var humanNumber = 0;
         var redAnswers = 0;
         var blueAnswers = 0;
         var whiteAnswers = 0;
@@ -77,6 +95,7 @@
                 this.blueAnswer = "Loading";
                 this.whiteAnswer = "Loading";
                 this.yellowAnswer = "Loading";
+                this.progress = 0;
             },
             ready: function() {
                 console.log("READY!!!");
@@ -91,8 +110,8 @@
                     this.blueAnswer = this.data[number].choices[1].answer;
                     this.whiteAnswer = this.data[number].choices[2].answer;
                     this.yellowAnswer = this.data[number].choices[3].answer;
-                    humanNumber = number + 1;
-                    console.log("Now on question number: ",humanNumber);   
+                    this.progress = number + 1;
+                    console.log("Now on question number: ",this.progress);   
                 } else {
                     this.question = "Done!";
                     this.redAnswer = "Red: "+redAnswers;
