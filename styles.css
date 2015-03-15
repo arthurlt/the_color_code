@@ -1,0 +1,16 @@
+body {
+  font-family: RobotoDraft, sans-serif;
+  color: #606060;
+  margin: 0;
+  background-color: #84FFFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}

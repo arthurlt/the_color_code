@@ -1,0 +1,10 @@
+{
+  "index": 1,
+  "question" : "Which word described me best when I was a child?",
+  "choices": [
+      { "color": "red",    "answer": "opinionated",  "definition": "conceitedly assertive and dogmatic in one's opinions",                      "selected" : false },
+      { "color": "blue",   "answer": "nurturing",    "definition": "care for and encourage the growth or development of",                       "selected" : false },
+      { "color": "white",  "answer": "inventive",    "definition": "having the ability to create or design new things or to think originally",  "selected" : false },
+      { "color": "yellow", "answer": "outgoing",     "definition": "friendly and socially confident",                                           "selected" : false }
+      ]
+}

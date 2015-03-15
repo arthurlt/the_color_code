@@ -1,0 +1,1352 @@
+[  
+   {  
+      "index":1,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"opinionated",
+            "definition":"conceitedly assertive and dogmatic in one's opinions",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"nurturing",
+            "definition":"care for and encourage the growth or development of",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"inventive",
+            "definition":"having the ability to create or design new things or to think originally",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"outgoing",
+            "definition":"friendly and socially confident",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":2,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"power-oriented",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"perfectionist",
+            "definition":"a person who refuses to accept any standard short of perfection",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"indecisive",
+            "definition":"not having or showing the ability to make decisions quickly and effectively",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"self-centered",
+            "definition":"",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":3,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"dominant",
+            "definition":"most important, powerful, or influential",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"sympathetic",
+            "definition":"feeling, showing, or expressing sympathy",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"tolerant",
+            "definition":"showing willingness to allow the existence of opinions or behavior that one does not necessarily agree with",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"enthusiastic",
+            "definition":"having or showing intense and eager enjoyment, interest, or approval",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":4,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"self-serving",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"suspicious",
+            "definition":"having or showing a cautious distrust of someone or something",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"unsure",
+            "definition":"not feeling, showing, or done with confidence and certainty",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"naïve",
+            "definition":"showing a lack of experience, wisdom, or judgment",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":5,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"decisive",
+            "definition":"settling an issue; producing a definite result",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"loyal",
+            "definition":"giving or showing firm and constant support or allegiance to a person or institution",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"contented",
+            "definition":"happy and at ease",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"playful",
+            "definition":"fond of games and amusement; lighthearted",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":6,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"arrogant",
+            "definition":"having or revealing an exaggerated sense of one's own importance or abilities",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"worry prone",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"silently stubborn",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"flighty",
+            "definition":"fickle and irresponsible",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":7,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"assertive",
+            "definition":"having or showing a confident and forceful personality",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"reliable",
+            "definition":"consistently good in quality or performance; able to be trusted",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"kind",
+            "definition":"a group of people or things having similar characteristics",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"sociable",
+            "definition":"willing to talk and engage in activities with other people; friendly",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":8,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"bossy",
+            "definition":"fond of giving people orders; domineering",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"self-critical",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"reluctant",
+            "definition":"unwilling and hesitant; disinclined",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"a teaser",
+            "definition":"",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":9,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"action-oriented",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"analytical",
+            "definition":"relating to or using analysis or logical reasoning",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"easygoing",
+            "definition":"relaxed and tolerant in approach or manne",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"carefree",
+            "definition":"free from anxiety or responsibility",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":10,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"critical of others",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"overly sensitive",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"shy",
+            "definition":"being reserved or having or showing nervousness or timidity in the company of other people",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"obnoxious",
+            "definition":"extremely unpleasant",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":11,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"determined",
+            "definition":"having made a firm decision and being resolved not to change it",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"detail conscious",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"a good listener",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"a party person",
+            "definition":"",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":12,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"demanding",
+            "definition":"making others work hard or meet high standards",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"unforgiving",
+            "definition":"not willing to forgive or excuse people's faults or wrongdoings",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"unmotiviated",
+            "definition":"not having interest in or enthusiasm for something, especially work or study",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"vain",
+            "definition":"having or showing an excessively high opinion of one's appearance, abilities, or worth",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":13,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"responsible",
+            "definition":"having an obligation to do something, or having control over or care for someone, as part of one's job or role",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"idealistic",
+            "definition":"characterized by idealism; unrealistically aiming for perfection",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"considerate",
+            "definition":"careful not to cause inconvenience or hurt to others",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"happy",
+            "definition":"feeling or showing pleasure or contentment",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":14,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"impatient",
+            "definition":"having or showing a tendency to be quickly irritated or provoked",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"moody",
+            "definition":"given to unpredictable changes of mood, especially sudden bouts of gloominess or sullenness",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"passive",
+            "definition":"accepting or allowing what happens or what others do, without active response or resistance",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"impulsive",
+            "definition":"acting or done without forethought",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":15,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"strong-willed",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"respectful",
+            "definition":"feeling or showing deference and respect",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"patient",
+            "definition":"able to accept or tolerate delays, problems, or suffering without becoming annoyed or anxious",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"fun-loving",
+            "definition":"",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":16,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"argumentative",
+            "definition":"given to expressing divergent or opposite views",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"unrealistic",
+            "definition":"not realistic",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"directionless",
+            "definition":"lacking in general aim or purpose",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"an interrpter",
+            "definition":"",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":17,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"independent",
+            "definition":"free from outside control; not depending on another's authority",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"dependable",
+            "definition":"trustworthy and reliable",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"even-tempered",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"trusting",
+            "definition":"showing or tending to have a belief in a person's honesty or sincerity; not suspicious",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":18,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"aggressive",
+            "definition":"ready or likely to attack or confront; characterized by or resulting from aggression",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"frequently depressed",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"ambivalent",
+            "definition":"having mixed feelings or contradictory ideas about something or someone",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"forgetful",
+            "definition":"apt or likely not to remember",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":19,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"powerful",
+            "definition":"having great power or strength",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"deliberate",
+            "definition":"done consciously and intentionally",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"gentle",
+            "definition":"mild in temperament or behavior; kind or tender",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"optimistic",
+            "definition":"hopeful and confident about the future",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":20,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"insensitive",
+            "definition":"showing or feeling no concern for others' feelings",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"judgemental",
+            "definition":"of or concerning the use of judgment",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"boring",
+            "definition":"not interesting; tedious",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"undisciplined",
+            "definition":"lacking in discipline; uncontrolled in behavior or manner",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":21,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"logical",
+            "definition":"of or according to the rules of logic or formal argument",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"emotional",
+            "definition":"of or relating to a person's emotions",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"agreeable",
+            "definition":"enjoyable and pleasurable; pleasant",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"popular",
+            "definition":"liked, admired, or enjoyed by many people or by a particular person or group",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":22,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"always right",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"guilt prone",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"unenthusiastic",
+            "definition":"not having or showing enthusiasm",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"uncommitted",
+            "definition":"not committed to a cause, activity, etc",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":23,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"pragmatic",
+            "definition":"dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"well-behaved",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"accepting",
+            "definition":"believe or come to recognize (an opinion, explanation, etc.) as valid or correct",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"spontaneous",
+            "definition":"performed or occurring as a result of a sudden inner impulse or inclination and without premeditation or external stimulus",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":24,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"merciless",
+            "definition":"showing no mercy or pity",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"thoughtful",
+            "definition":"showing consideration for the needs of other people",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"uninvolved",
+            "definition":"not connected or concerned with someone or something, especially on an emotional level",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"a show-off",
+            "definition":"",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":25,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"task-oriented",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"sincere",
+            "definition":"free from pretense or deceit; proceeding from genuine feelings",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"diplomatic",
+            "definition":"of or concerning the profession, activity, or skill of managing international relations",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"lively",
+            "definition":"full of life and energy; active and outgoing",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":26,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"tactless",
+            "definition":"having or showing a lack of adroitness and sensitivity in dealing with others or with difficult issues",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"hard to please",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"lazy",
+            "definition":"unwilling to work or use energy",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"loud",
+            "definition":"producing or capable of producing much noise; easily audible",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":27,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"direct",
+            "definition":"extending or moving from one place to another by the shortest way without changing direction or stopping",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"creative",
+            "definition":"relating to or involving the imagination or original ideas, especially in the production of an artistic work",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"adaptable",
+            "definition":"able to adjust to new conditions",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"a performer",
+            "definition":"",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":28,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"calculating",
+            "definition":"acting in a scheming and ruthlessly determined wayv",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"self-righteous",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"self-depreciating",
+            "definition":"",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"disorganized",
+            "definition":"unable to plan one's activities efficiently",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":29,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"confident",
+            "definition":"feeling or showing confidence in oneself; self-assured",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"disciplined",
+            "definition":"showing a controlled form of behavior or way of working",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"pleasant",
+            "definition":"friendly and considerate; likable",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"charismatic",
+            "definition":"exercising a compelling charm that inspires devotion in others",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":30,
+      "question":"Which word described me best when I was a child?",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"intimidating",
+            "definition":"righten or overawe (someone), especially in order to make them do what one wants",
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"careful",
+            "definition":"making sure of avoiding potential danger, mishap, or harm; cautious",
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"unproductive",
+            "definition":"not producing or able to produce large amounts of goods, crops, or other commodities",
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"afraid to face facts",
+            "definition":"",
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":31,
+      "question":"If I applied for a job, a prospective employer would most likely hire me because I am:",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Driven, direct, and delegating.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Deliberate, accurate, and reliable.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Patient, adaptable, and tactful.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Fun-loving, spirited, and casual.",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":32,
+      "question":"When involved in an intimate relationship, if I feel threatened by my partner, I:",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Fight back with facts and anger.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Cry, feel hurt, and plan revenge.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Become quiet, withdrawn, and often hold anger until I blow up over some minor issue later",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Distance myself and avoid further conflict.",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":33,
+      "question":"For me, life is most meaningful when it:",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Is task-oriented and productive.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Is filled with people and purpose.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Is free of pressure and stress.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Allows me to be playful, lighthearted, and optimistic.",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":34,
+      "question":"As a child, I was: ",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Stubborn, bright, and/or aggressive. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Well-behaved, caring, and/or depressed. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Quiet, easygoing, and/or shy. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Too talkative, happy, and/or playful. ",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":35,
+      "question":"As an adult, I am: ",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Opinionated, determined, and/or bossy. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Responsible, honest, and/or unforgiving. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Accepting, contented, and/or unmotivated.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Charismatic, positive, and/or obnoxious. ",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":36,
+      "question":"As a parent, I am: ",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Demanding, quick-tempered, and/or uncompromising. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Concerned, sensitive, and/or critical. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Permissive, easily persuaded, and/or often overwhelmed. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Playful, casual, and/or irresponsible. ",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":37,
+      "question":"In an argument with a friend, I am most likely to be: ",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Verbally stubborn about facts. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Concerned about others' feelings and principles. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Silently stubborn, uncomfortable, and/or confused.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Loud, uncomfortable, and/or compromising.",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":38,
+      "question":"If my friend was in trouble, I would be: ",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Protective, resourceful, and recommend solutions. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Concerned, empathetic, and loyal-regardless of the problem. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Supportive, patient, and a good listener.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Nonjudgmental, optimistic, and downplaying the seriousness of the situation. ",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":39,
+      "question":"When making decisions, I am: ",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Assertive, articulate, and logical. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Deliberate, precise, and cautious. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Indecisive, timid, and reluctant. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Impulsive, uncommitted, and inconsistent.",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":40,
+      "question":"When I fail, I feel:",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Silently self-critical, yet verbally stubborn and defensive. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Guilty, self-critical, and vulnerable to depression-I dwell on it.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Unsettled and fearful, but I keep it to myself.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Embarrassed and nervous-seeking to escape the situation. ",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":41,
+      "question":"If someone crosses me: ",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"I am angered, and cunningly plan ways to get even quickly. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"I feel deeply hurt and find it almost impossible to forgive completely. Generally, getting even is not enough. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"I am silently hurt and plan to get even and/or completely avoid the other person. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"I want to avoid confrontation, consider the situation not important enough to bother with, and/or seek other friends. ",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":42,
+      "question":" Work is: ",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"A most productive way to spend one's time. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"A healthy activity, which should be done right if it's to be done at all. Work should be done before one plays. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"A positive activity as long as it is something I enjoy and don't feel pressured to accomplish. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"A necessary evil, much less inviting than play. ",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":43,
+      "question":"In social situations, I am most often: ",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Feared by others. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Admired by others. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Protected by others. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Envied by others. ",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":44,
+      "question":"In a relationship, I am most concerned with being: ",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Approved of and right. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Understood, appreciated, and intimate.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Respected, tolerant, and peaceful.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Praised, having fun, and feeling free.",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   },
+   {  
+      "index":45,
+      "question":"To feel alive and positive, I seek: ",
+      "choices":[  
+         {  
+            "color":"red",
+            "answer":"Adventure, leadership, and lots of action.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"blue",
+            "answer":"Security, creativity, and purpose. ",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"white",
+            "answer":"Acceptance and safety.",
+            "definition":null,
+            "selected":false
+         },
+         {  
+            "color":"yellow",
+            "answer":"Excitement, playful productivity, and the company of others. ",
+            "definition":null,
+            "selected":false
+         }
+      ]
+   }
+]
