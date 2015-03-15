@@ -63,8 +63,8 @@
     </template>
     <script type="text/javascript">
     (function() {
-        var number = 40;
-        var humanNumber = 1;
+        var number = 0;
+        var humanNumber = 0;
         var redAnswers = 0;
         var blueAnswers = 0;
         var whiteAnswers = 0;
@@ -91,6 +91,7 @@
                     this.blueAnswer = this.data[number].choices[1].answer;
                     this.whiteAnswer = this.data[number].choices[2].answer;
                     this.yellowAnswer = this.data[number].choices[3].answer;
+                    humanNumber = number + 1;
                     console.log("Now on question number: ",humanNumber);   
                 } else {
                     this.question = "Done!";
@@ -110,27 +111,25 @@
             nextQuestion: function() {
                 if (number < 45) { 
                     number++;
-                    humanNumber = number + 1;
+                    if (this.selectedAnswer == "red") {
+                        redAnswers++;
+                        //console.log("red selected");
+                    } else if (this.selectedAnswer == "blue") {
+                        blueAnswers++;
+                        //console.log("blue selected");
+                    } else if (this.selectedAnswer == "white") {
+                        whiteAnswers++;
+                        //console.log("white selected");
+                    } else if (this.selectedAnswer == "yellow") {
+                        yellowAnswers++;
+                        //console.log("yellow selected");
+                    } 
+                    console.log("Selected Answer: ",this.selectedAnswer,
+                              "\nRed:    ",redAnswers, 
+                              "\nBlue:   ",blueAnswers, 
+                              "\nWhite:  ",whiteAnswers, 
+                              "\nYellow: ",yellowAnswers);
                 }
-
-                if (this.selectedAnswer == "red") {
-                    redAnswers++;
-                    //console.log("red selected");
-                } else if (this.selectedAnswer == "blue") {
-                    blueAnswers++;
-                    //console.log("blue selected");
-                } else if (this.selectedAnswer == "white") {
-                    whiteAnswers++;
-                    //console.log("white selected");
-                } else if (this.selectedAnswer == "yellow") {
-                    yellowAnswers++;
-                    //console.log("yellow selected");
-                } 
-                console.log("Selected Answer: ",this.selectedAnswer,
-                          "\nRed:    ",redAnswers, 
-                          "\nBlue:   ",blueAnswers, 
-                          "\nWhite:  ",whiteAnswers, 
-                          "\nYellow: ",yellowAnswers);
                 this.updateContent();
                 this.selectedAnswer = null;
             }
