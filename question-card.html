@@ -5,26 +5,31 @@
 <link rel="import" href="bower_components/paper-progress/paper-progress.html">
 <link rel="import" href="bower_components/paper-fab/paper-fab.html">
 <link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
+<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
 
 <polymer-element name="question-card">
     <template>
         <style type="text/css">
         .card {
-            width: 512px;
+            width: 640px;
             margin: 64px auto 0;
             border-radius: 3px;
             overflow: hidden;
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.23);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
         }
         .card > core-toolbar {
-            font-size: 18px;
             background-color: #03A9F4;
             color: #fff;
-            line-height: 26px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.15);
         }
         .card > core-toolbar > .question {
-            padding: 0 8px;
+            padding: 32px
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 400;
         }
         .card > core-toolbar > paper-fab {
             position: absolute !important;
@@ -37,9 +42,16 @@
         .card > core-toolbar > paper-fab .answered {
             display: block !important;
         }
-        .card > .answers {
-            padding: 16px;
+        .card > core-pages {
+            height: 292px;
+        }
+        .card > core-pages > .answers {
+            padding: 32px;
             background-color: #fff;
+        }
+        .card > core-pages > .answers > paper-radio-group > paper-radio-button {
+            /* Breaks larger answers
+            height: 24px;*/
         }
         paper-radio-button::shadow #ink[checked] {
             color: #03A9F4;
@@ -47,9 +59,28 @@
         paper-radio-button::shadow #onRadio {
             background-color: #03A9F4;
         }
-
         paper-radio-button[checked]::shadow #offRadio {
             border-color: #03A9F4;
+        }
+        .card > core-pages > .answers > div > paper-icon-button {
+            color: #CCC;
+            padding: 12px;
+        } 
+        .card > core-pages > .definition {
+            padding: 32px;
+            background-color: #444;
+            color: #fff;
+        }
+        .card > core-pages > .definition > paper-icon-button {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+        }
+        .card > core-pages > .definition > h2 {
+            padding: 16px 0px;
+        }
+        .card > core-pages > .completed {
+            padding: 32px;
         }
         .card > paper-progress {
             width: 100%;
@@ -57,32 +88,43 @@
         .card > paper-progress::shadow #activeProgress {
             background-color: #03A9F4;
         }
+        .card > paper-progress::shadow #progressContainer {
+            background-color: #fff;
+        }
         </style>
         <core-ajax auto url="questions.json" handleAs="json" on-core-response="{{handleResponse}}"></core-ajax>
         <core-a11y-keys target="{{}}" keys="enter" on-keys-pressed="{{nextQuestion}}"></core-a11y-keys>
-        <core-pages selected="0">
-            <section>
-                <div class="card" vertical layout>
-                    <core-toolbar class="tall">
-                        <div class="question middle" flex>{{question}}</div>
-                        <paper-fab icon="check" on-click="{{nextQuestion}}" style="visibility: {{displayFab}}"></paper-fab>
-                    </core-toolbar>
-                    <div class="answers">
-                        <paper-radio-group vertical layout
-                            id="answersRadioGroup"
-                            selected="{{selectedAnswer}}"
-                            on-change="{{questionAnswered}}"
-                            excludedLocalNames="paper-icon-button">
-                            <paper-radio-button name="red" label="{{redAnswer}}"></paper-radio-button>
-                            <paper-radio-button name="blue" label="{{blueAnswer}}"></paper-radio-button>
-                            <paper-radio-button name="white" label="{{whiteAnswer}}"></paper-radio-button>
-                            <paper-radio-button name="yellow" label="{{yellowAnswer}}"></paper-radio-button>
-                        </paper-radio-group>
+        <div class="card" vertical layout>
+            <core-toolbar class="tall">
+                <h4 class="question middle" flex>{{question}}</h4>
+                <paper-fab icon="check" on-click="{{nextQuestion}}" style="visibility: {{displayFab}}"></paper-fab>
+            </core-toolbar>
+            <core-pages selected="{{currentPage}}">
+                <div class="answers" horizontal layout center>
+                    <paper-radio-group vertical layout flex id="answersRadioGroup" selected="{{selectedAnswer}}" on-change="{{questionAnswered}}">
+                        <paper-radio-button name="red" label="{{redAnswer}}"></paper-radio-button>
+                        <paper-radio-button name="blue" label="{{blueAnswer}}"></paper-radio-button>
+                        <paper-radio-button name="white" label="{{whiteAnswer}}"></paper-radio-button>
+                        <paper-radio-button name="yellow" label="{{yellowAnswer}}"></paper-radio-button>
+                    </paper-radio-group>
+                    <div vertical layout style="display: {{displayDefinitions}}">
+                        <paper-icon-button icon="info-outline" on-click="{{switchToRedDefinition}}"></paper-icon-button>
+                        <paper-icon-button icon="info-outline" on-click="{{switchToBlueDefinition}}"></paper-icon-button>
+                        <paper-icon-button icon="info-outline" on-click="{{switchToWhiteDefinition}}"></paper-icon-button>
+                        <paper-icon-button icon="info-outline" on-click="{{switchToYellowDefinition}}"></paper-icon-button>
                     </div>
-                    <paper-progress value="{{progress}}" min="0" max="45"></paper-progress>
                 </div>
-            </section>
-        </core-pages>
+                <div class="definition">
+                    <paper-icon-button icon="arrow-back" on-click="{{switchBackToAnswers}}"></paper-icon-button>
+                    <h2>{{definedWord}}:</h2>
+                    <div>{{definitionOfWord}}</div>
+                </div>
+                <div class="completed">
+
+                </div>
+            </core-pages>
+            <paper-progress value="{{progress}}" min="0" max="45"></paper-progress>
+        </div>
     </template>
     <script type="text/javascript">
     (function() {
@@ -94,6 +136,7 @@
 
         Polymer('question-card', {
             created: function() {
+                this.currentPage = 0;
                 this.question = "Loading";
                 this.redAnswer = "Loading";
                 this.blueAnswer = "Loading";
@@ -101,13 +144,13 @@
                 this.yellowAnswer = "Loading";
                 this.progress = 0;
                 this.displayFab = "hidden";
+                this.displayDefinitions = "none";
             },
             ready: function() {
                 console.log("READY!!!");
                 //console.log(this.answers);   
             },
-            publish: function() {
-            },
+            publish: function() {},
             updateContent: function() {
                 if (number <= 44) {
                     this.question = this.data[number].question;
@@ -116,13 +159,18 @@
                     this.whiteAnswer = this.data[number].choices[2].answer;
                     this.yellowAnswer = this.data[number].choices[3].answer;
                     this.progress = number + 1;
-                    console.log("Now on question number: ",this.progress);   
+                    console.log("Now on question number: ", this.progress);
                 } else {
                     this.question = "Done!";
-                    this.redAnswer = "Red: "+redAnswers;
-                    this.blueAnswer = "Blue: "+blueAnswers;
-                    this.whiteAnswer = "White: "+whiteAnswers;
-                    this.yellowAnswer = "Yellow: "+yellowAnswers;
+                    this.redAnswer = "Red: " + redAnswers;
+                    this.blueAnswer = "Blue: " + blueAnswers;
+                    this.whiteAnswer = "White: " + whiteAnswers;
+                    this.yellowAnswer = "Yellow: " + yellowAnswers;
+                }
+                if (this.question == "Which word described me best when I was a child?") {
+                    this.displayDefinitions = "flex";
+                } else {
+                    this.displayDefinitions = "none";
                 }
             },
             handleResponse: function(e) {
@@ -131,10 +179,10 @@
                 //console.log(red);
             },
             questionAnswered: function() {
-                this.displayFab = "visible";
+                if (number <= 44) this.displayFab = "visible";
             },
             nextQuestion: function() {
-                if (number <= 44) { 
+                if (number <= 44) {
                     number++;
                     if (this.selectedAnswer == "red") {
                         redAnswers++;
@@ -148,16 +196,39 @@
                     } else if (this.selectedAnswer == "yellow") {
                         yellowAnswers++;
                         //console.log("yellow selected");
-                    } 
-                    console.log("Selected Answer: ",this.selectedAnswer,
-                              "\nRed:    ",redAnswers, 
-                              "\nBlue:   ",blueAnswers, 
-                              "\nWhite:  ",whiteAnswers, 
-                              "\nYellow: ",yellowAnswers);
+                    }
+                    console.log("Selected Answer: ", this.selectedAnswer,
+                        "\nRed:    ", redAnswers,
+                        "\nBlue:   ", blueAnswers,
+                        "\nWhite:  ", whiteAnswers,
+                        "\nYellow: ", yellowAnswers);
                 }
                 this.updateContent();
                 this.displayFab = "hidden";
                 this.selectedAnswer = null;
+            },
+            switchToRedDefinition: function() {
+                this.currentPage = 1;
+                this.definedWord = this.redAnswer;
+                this.definitionOfWord = this.data[number].choices[0].definition;
+            },
+            switchToBlueDefinition: function() {
+                this.currentPage = 1;
+                this.definedWord = this.blueAnswer;
+                this.definitionOfWord = this.data[number].choices[1].definition;
+            },
+            switchToWhiteDefinition: function() {
+                this.currentPage = 1;
+                this.definedWord = this.whiteAnswer;
+                this.definitionOfWord = this.data[number].choices[2].definition;
+            },
+            switchToYellowDefinition: function() {
+                this.currentPage = 1;
+                this.definedWord = this.yellowAnswer;
+                this.definitionOfWord = this.data[number].choices[3].definition;
+            },
+            switchBackToAnswers: function() {
+                this.currentPage = 0;
             }
         });
     })();
