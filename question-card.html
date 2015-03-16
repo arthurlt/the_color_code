@@ -1,11 +1,12 @@
 <link rel="import" href="bower_components/core-ajax/core-ajax.html">
-<link rel="import" href="bower_components/core-pages/core-pages.html">
 <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
 <link rel="import" href="bower_components/core-icons/core-icons.html">
-<link rel="import" href="bower_components/paper-progress/paper-progress.html">
 <link rel="import" href="bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
+<link rel="import" href="bower_components/core-animated-pages/transitions/slide-from-right.html">
 <link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
 <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="bower_components/paper-progress/paper-progress.html">
 
 <polymer-element name="question-card">
     <template>
@@ -42,14 +43,14 @@
         .card > core-toolbar > paper-fab .answered {
             display: block !important;
         }
-        .card > core-pages {
+        .card > core-animated-pages {
             height: 292px;
         }
-        .card > core-pages > .answers {
+        .card > core-animated-pages > .answers {
             padding: 32px;
             background-color: #fff;
         }
-        .card > core-pages > .answers > paper-radio-group > paper-radio-button {
+        .card > core-animated-pages > .answers > paper-radio-group > paper-radio-button {
             /* Breaks larger answers
             height: 24px;*/
         }
@@ -62,24 +63,24 @@
         paper-radio-button[checked]::shadow #offRadio {
             border-color: #03A9F4;
         }
-        .card > core-pages > .answers > div > paper-icon-button {
+        .card > core-animated-pages > .answers > div > paper-icon-button {
             color: #CCC;
             padding: 12px;
         } 
-        .card > core-pages > .definition {
+        .card > core-animated-pages > .definition {
             padding: 32px;
             background-color: #444;
             color: #fff;
         }
-        .card > core-pages > .definition > paper-icon-button {
+        .card > core-animated-pages > .definition > paper-icon-button {
             position: absolute;
             top: 16px;
             left: 16px;
         }
-        .card > core-pages > .definition > h2 {
+        .card > core-animated-pages > .definition > h2 {
             padding: 16px 0px;
         }
-        .card > core-pages > .completed {
+        .card > core-animated-pages > .completed {
             padding: 32px;
         }
         .card > paper-progress {
@@ -99,7 +100,7 @@
                 <h4 class="question middle" flex>{{question}}</h4>
                 <paper-fab icon="check" on-click="{{nextQuestion}}" style="visibility: {{displayFab}}"></paper-fab>
             </core-toolbar>
-            <core-pages selected="{{currentPage}}">
+            <core-animated-pages transitions="slide-from-right" selected="{{currentPage}}">
                 <div class="answers" horizontal layout center>
                     <paper-radio-group vertical layout flex id="answersRadioGroup" selected="{{selectedAnswer}}" on-change="{{questionAnswered}}">
                         <paper-radio-button name="red" label="{{redAnswer}}"></paper-radio-button>
@@ -122,7 +123,7 @@
                 <div class="completed">
 
                 </div>
-            </core-pages>
+            </core-animated-pages>
             <paper-progress value="{{progress}}" min="0" max="45"></paper-progress>
         </div>
     </template>
