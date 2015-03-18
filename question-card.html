@@ -1,4 +1,5 @@
 <link rel="import" href="bower_components/core-ajax/core-ajax.html">
+<link rel="import" href="bower_components/core-localstorage/core-localstorage.html">
 <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
 <link rel="import" href="bower_components/core-icons/core-icons.html">
 <link rel="import" href="bower_components/paper-fab/paper-fab.html">
@@ -82,6 +83,19 @@
         }
         .card > core-animated-pages > .completed {
             padding: 32px;
+            background-color: #444;
+        }
+        .card > core-animated-pages > .completed > .red {
+            color: #F44336;
+        }
+        .card > core-animated-pages > .completed > .blue {
+            color: #2196F3;
+        }
+        .card > core-animated-pages > .completed > .white {
+            color: #FAFAFA;
+        }
+        .card > core-animated-pages > .completed > .yellow {
+            color: #FFEB3B;
         }
         .card > paper-progress {
             width: 100%;
@@ -93,7 +107,8 @@
             background-color: #fff;
         }
         </style>
-        <core-ajax auto url="questions.json" handleAs="json" on-core-response="{{handleResponse}}"></core-ajax>
+        <core-ajax auto url="questions.json" handleAs="json" on-core-response="{{handleResponse}}" response="{{value}}"></core-ajax>
+        <core-localstorage name="json-saver" value="{{value}}"></core-localstorage>
         <core-a11y-keys target="{{}}" keys="enter" on-keys-pressed="{{nextQuestion}}"></core-a11y-keys>
         <div class="card" vertical layout>
             <core-toolbar class="tall">
@@ -101,6 +116,12 @@
                 <paper-fab icon="check" on-click="{{nextQuestion}}" style="visibility: {{displayFab}}"></paper-fab>
             </core-toolbar>
             <core-animated-pages transitions="slide-from-right" selected="{{currentPage}}">
+                <div class="completed" horizontal layout around-justified center>
+                    <h1 class="red">Red: {{redAnswer}}</h1>
+                    <h1 class="blue">Blue: {{blueAnswer}}</h1>
+                    <h1 class="white">White: {{whiteAnswer}}</h1>
+                    <h1 class="yellow">Yellow: {{yellowAnswer}}</h1>
+                </div>
                 <div class="answers" horizontal layout center>
                     <paper-radio-group vertical layout flex id="answersRadioGroup" selected="{{selectedAnswer}}" on-change="{{questionAnswered}}">
                         <paper-radio-button name="red" label="{{redAnswer}}"></paper-radio-button>
@@ -120,9 +141,6 @@
                     <h2>{{definedWord}}:</h2>
                     <div>{{definitionOfWord}}</div>
                 </div>
-                <div class="completed">
-
-                </div>
             </core-animated-pages>
             <paper-progress value="{{progress}}" min="0" max="45"></paper-progress>
         </div>
@@ -137,7 +155,7 @@
 
         Polymer('question-card', {
             created: function() {
-                this.currentPage = 0;
+                this.currentPage = 1;
                 this.question = "Loading";
                 this.redAnswer = "Loading";
                 this.blueAnswer = "Loading";
@@ -153,25 +171,22 @@
             },
             publish: function() {},
             updateContent: function() {
-                if (number <= 44) {
+                if (number < this.data.length) {
                     this.question = this.data[number].question;
                     this.redAnswer = this.data[number].choices[0].answer;
                     this.blueAnswer = this.data[number].choices[1].answer;
                     this.whiteAnswer = this.data[number].choices[2].answer;
                     this.yellowAnswer = this.data[number].choices[3].answer;
+                    if (this.data[number].choices[0].definition == null) {
+                        this.displayDefinitions = "none";
+                    } else {
+                        this.displayDefinitions = "flex";
+                    }
                     this.progress = number + 1;
                     console.log("Now on question number: ", this.progress);
                 } else {
-                    this.question = "Done!";
-                    this.redAnswer = "Red: " + redAnswers;
-                    this.blueAnswer = "Blue: " + blueAnswers;
-                    this.whiteAnswer = "White: " + whiteAnswers;
-                    this.yellowAnswer = "Yellow: " + yellowAnswers;
-                }
-                if (this.question == "Which word described me best when I was a child?") {
-                    this.displayDefinitions = "flex";
-                } else {
-                    this.displayDefinitions = "none";
+                    this.displayDefinitions = "none"
+                    this.switchToCompleted();
                 }
             },
             handleResponse: function(e) {
@@ -180,10 +195,10 @@
                 //console.log(red);
             },
             questionAnswered: function() {
-                if (number <= 44) this.displayFab = "visible";
+                if (number < this.data.length) this.displayFab = "visible";
             },
             nextQuestion: function() {
-                if (number <= 44) {
+                if (number < this.data.length) {
                     number++;
                     if (this.selectedAnswer == "red") {
                         redAnswers++;
@@ -209,27 +224,36 @@
                 this.selectedAnswer = null;
             },
             switchToRedDefinition: function() {
-                this.currentPage = 1;
+                this.currentPage = 2;
                 this.definedWord = this.redAnswer;
                 this.definitionOfWord = this.data[number].choices[0].definition;
             },
             switchToBlueDefinition: function() {
-                this.currentPage = 1;
+                this.currentPage = 2;
                 this.definedWord = this.blueAnswer;
                 this.definitionOfWord = this.data[number].choices[1].definition;
             },
             switchToWhiteDefinition: function() {
-                this.currentPage = 1;
+                this.currentPage = 2;
                 this.definedWord = this.whiteAnswer;
                 this.definitionOfWord = this.data[number].choices[2].definition;
             },
             switchToYellowDefinition: function() {
-                this.currentPage = 1;
+                this.currentPage = 2;
                 this.definedWord = this.yellowAnswer;
                 this.definitionOfWord = this.data[number].choices[3].definition;
             },
             switchBackToAnswers: function() {
+                this.currentPage = 1;
+            },
+            switchToCompleted: function() {
                 this.currentPage = 0;
+                this.question = "Done!";
+                this.redAnswer = redAnswers;
+                this.blueAnswer = blueAnswers;
+                this.whiteAnswer = whiteAnswers;
+                this.yellowAnswer = yellowAnswers;
+                console.log("switch to completed")
             }
         });
     })();
