@@ -1,3 +1,4 @@
+<link rel="import" href="bower_components/font-roboto/roboto.html">
 <link rel="import" href="bower_components/core-ajax/core-ajax.html">
 <link rel="import" href="bower_components/core-localstorage/core-localstorage.html">
 <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
@@ -8,6 +9,7 @@
 <link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
 <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="bower_components/paper-progress/paper-progress.html">
+<link rel="import" href="bower_components/paper-toast/paper-toast.html">
 
 <polymer-element name="question-card">
     <template>
@@ -144,6 +146,7 @@
             </core-animated-pages>
             <paper-progress value="{{progress}}" min="0" max="45"></paper-progress>
         </div>
+        <paper-toast id="toast" text="{{quesetionNotAnswered}}"></paper-toast>
     </template>
     <script type="text/javascript">
     (function() {
@@ -164,6 +167,7 @@
                 this.progress = 0;
                 this.displayFab = "hidden";
                 this.displayDefinitions = "none";
+                this.quesetionNotAnswered = "ANSWER THE DAMN QUESTION!!";
             },
             ready: function() {
                 console.log("READY!!!");
@@ -199,27 +203,34 @@
             },
             nextQuestion: function() {
                 if (number < this.data.length) {
-                    number++;
                     if (this.selectedAnswer == "red") {
                         redAnswers++;
+                        number++;
                         //console.log("red selected");
                     } else if (this.selectedAnswer == "blue") {
                         blueAnswers++;
+                        number++;
                         //console.log("blue selected");
                     } else if (this.selectedAnswer == "white") {
                         whiteAnswers++;
+                        number++;
                         //console.log("white selected");
                     } else if (this.selectedAnswer == "yellow") {
                         yellowAnswers++;
+                        number++;
                         //console.log("yellow selected");
+                    } else if (this.selectedAnswer == null) {
+                        console.log("ANSWER THE DAMN QUESTION");
+                        this.$.toast.show();
+                        return;
                     }
                     console.log("Selected Answer: ", this.selectedAnswer,
                         "\nRed:    ", redAnswers,
                         "\nBlue:   ", blueAnswers,
                         "\nWhite:  ", whiteAnswers,
                         "\nYellow: ", yellowAnswers);
+                    this.updateContent();
                 }
-                this.updateContent();
                 this.displayFab = "hidden";
                 this.selectedAnswer = null;
             },
@@ -254,6 +265,9 @@
                 this.whiteAnswer = whiteAnswers;
                 this.yellowAnswer = yellowAnswers;
                 console.log("switch to completed")
+            },
+            thisIsTheAnswer: function() {
+                return this.selectedAnswer;
             }
         });
     })();
