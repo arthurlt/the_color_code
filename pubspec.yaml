@@ -1,7 +1,3 @@
 name: jsonReader
 version: 0.0.1
 description: JSON Reader Library
-dependencies:
-  dartson: "^0.2.7"
-transformers:
-- dartson
