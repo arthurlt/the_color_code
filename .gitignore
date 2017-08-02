@@ -48,3 +48,4 @@ Temporary Items
 
 bower_components
 .packages
+pubspec.lock
