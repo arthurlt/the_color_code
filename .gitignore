@@ -46,6 +46,5 @@ Temporary Items
 # Project Files
 # ================
 
-bower_components
 .packages
 pubspec.lock
