@@ -2,14 +2,19 @@ import 'dart:io';
 import 'dart:convert';
 
 main() async {
-    int questionNumber = 14;
     String jsonFile = await new File('questions.json').readAsString();
 
     List questionList = JSON.decode(jsonFile);
 
-    print(questionList[questionNumber]["question"]);
+    
+    for (int i = 0; i < questionList.length; i++) {
+        print(questionList[i]["question"]);
+        
+        for (int j = 0; j < questionList[i]["choices"].length; j++) {
+            print("${questionList[i]["choices"][j]["answer"]}?");
+        }
 
-    for (int i = 0; i < questionList[questionNumber]["choices"].length; i++) {
-        print("${questionList[questionNumber]["choices"][i]["answer"]}?");
+        print(" ");
     }
+    
 }
