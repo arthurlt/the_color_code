@@ -2,8 +2,10 @@ import 'dart:io';
 import 'dart:convert';
 
 main() async {
+    //Taking JSON and saving it to String
     String jsonFile = await new File('questions.json').readAsString();
 
+    //Taking that JSON String and decoding it to a List
     List questionList = JSON.decode(jsonFile);
     
     for (int i = 0; i < questionList.length; i++) {
