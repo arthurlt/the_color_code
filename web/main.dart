@@ -13,10 +13,10 @@ void printJson(String json) {
         print(questionList[i]["question"]);
         
         for (int j = 0; j < questionList[i]["choices"].length; j++) {
-            print("${questionList[i]["choices"][j]["answer"]}?");
+            print(questionList[i]["choices"][j]["answer"]);
         }
 
-        print(" ");
+        if (i < questionList.length - 1) print(" ");
     }   
 }
 
@@ -25,6 +25,6 @@ class Question {
     String questionString, redAnswer, blueAnswer, whiteAnswer, yellowAnswer;
 }
 
-class PhraseQuestion extends Question {
+class QuestionWithDef extends Question {
     String redDef, blueDef, whiteDef, yellowDef;
 }
