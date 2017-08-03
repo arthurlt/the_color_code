@@ -1025,7 +1025,7 @@
       ]
    },
    {  
-      "question":" Work is: ",
+      "question":"Work is: ",
       "choices":[  
          {  
             "color":"red",
