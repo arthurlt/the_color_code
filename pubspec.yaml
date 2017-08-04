@@ -2,6 +2,3 @@ name: TheColorCode
 version: 0.0.1
 description: A quiz for the Hartman Personality Profile done with Dart and Flutter
 publish_to: none
-web:
-  compiler:
-    debug: dartdevc
