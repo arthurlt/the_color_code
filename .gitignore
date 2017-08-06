@@ -48,6 +48,4 @@ Temporary Items
 
 .packages
 pubspec.lock
-doc/api/
-build/
-web/*.dart.js*
+.idea/
