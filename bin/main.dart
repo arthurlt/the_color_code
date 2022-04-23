@@ -2,47 +2,61 @@ import 'dart:io';
 import 'dart:convert';
 
 main() async {
-    createQuestions(await new File('bin/questions.json').readAsString());
+    createQuestions(File('assets/questions.json').readAsStringSync());
 }
-
-/// Takes String input and when formatted correctly will cycle through all 
-void printJson(String json) {
-    //Taking that JSON String and decoding it to a List
-    List questionList = JSON.decode(json);
     
-    for (int i = 0; i < questionList.length; i++) {
-        print(questionList[i]["question"]);
-        
-
-        if (i < questionList.length - 1) print(" ");
-    }
-}
-
 void createQuestions(String json) {
-    //Taking that JSON String and decoding it to a List
-    List questionList = JSON.decode(json);
+    final List questionList = jsonDecode(json);
 
     for (int i = 0; i < questionList.length; i++) {
-        QuestionWithDefinition questionCard = new QuestionWithDefinition();
-        questionCard.questionString = questionList[i]["question"];
-        questionCard.questionNumber = i + 1;
-        questionCard.redAnswer = questionList[i]["choices"]["red"]["answer"];
-        questionCard.redDefinition = questionList[i]["choices"]["red"]["definition"]; 
+        if (questionList[i]['definitions']) {
+            QuestionWithDefinition questionCard = new QuestionWithDefinition();
+            questionCard.questionString = questionList[i]['question'];
+            questionCard.questionNumber = i + 1;
+            for (final color in Question.colors) {
+                questionCard.answers[color] = questionList[i]['choices'][color]['answer'];
+                questionCard.definitions[color] = questionList[i]['choices'][color]['definition'];
+            }
+            questionCard.readQuestion();
+        } else {
+            Question questionCard = new Question();
+            questionCard.questionString = questionList[i]['question'];
+            questionCard.questionNumber = i + 1;
+            for (final color in Question.colors) {
+                questionCard.answers[color] = questionList[i]['choices'][color]['answer'];
+            }
+            questionCard.readQuestion();
+        }
 
-        questionCard.readQuestion();
-        if (i < questionList.length - 1) print(" ");
+        if (i < questionList.length - 1) print('\n');
     }
 }
 
 class Question {
-    int questionNumber;
-    String questionString, redAnswer, blueAnswer, whiteAnswer, yellowAnswer;
+    static List colors = ['red', 'blue', 'white', 'yellow'];
+    int? questionNumber;
+    String? questionString;
+    Map answers = Map<String, String?>.fromIterable(colors,
+        key: (i) => i,
+        value: (i) => '$i answer');
 
     void readQuestion() {
-        print(questionString);
+        print('Question #$questionNumber \n$questionString\n');
+        for (final color in colors) {
+            print(answers[color]);
+        }
     }
 }
 
 class QuestionWithDefinition extends Question {
-    String redDefinition, blueDefinition, whiteDefinition, yellowDefinition;
+    Map definitions = Map<String, String?>.fromIterable(Question.colors,
+        key: (i) => i,
+        value: (i) => '$i definition');
+
+    void readQuestion() {
+        print('Question #$questionNumber \n$questionString\n');
+        for (final color in Question.colors) {
+            print('${answers[color]} [${definitions[color]}]');
+        }
+    }
 }
