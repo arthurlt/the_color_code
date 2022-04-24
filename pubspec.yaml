@@ -5,4 +5,14 @@ publish_to: none
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
-#dependencies: 
+
+dependencies:
+  flutter:       # Required for every Flutter project
+    sdk: flutter # Required for every Flutter project
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter # Required for a Flutter project that includes tests
+
+flutter:
+  uses-material-design: true # Required if you use the Material icon font

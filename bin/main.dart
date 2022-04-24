@@ -1,5 +1,5 @@
-import 'dart:io';
 import 'dart:convert';
+import 'dart:io';
 
 main() async {
     createQuestions(File('assets/questions.json').readAsStringSync());
@@ -27,7 +27,6 @@ void createQuestions(String json) {
             }
             questionCard.readQuestion();
         }
-
         if (i < questionList.length - 1) print('\n');
     }
 }
@@ -38,7 +37,7 @@ class Question {
     String? questionString;
     Map answers = Map<String, String?>.fromIterable(colors,
         key: (i) => i,
-        value: (i) => '$i answer');
+        value: null);
 
     void readQuestion() {
         print('Question #$questionNumber \n$questionString\n');
@@ -51,7 +50,7 @@ class Question {
 class QuestionWithDefinition extends Question {
     Map definitions = Map<String, String?>.fromIterable(Question.colors,
         key: (i) => i,
-        value: (i) => '$i definition');
+        value: null);
 
     void readQuestion() {
         print('Question #$questionNumber \n$questionString\n');
