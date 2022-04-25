@@ -1,4 +1,4 @@
-name: TheColorCode
+name: the_color_code
 version: 0.0.1
 description: A quiz for the Hartman Personality Profile done with Dart and Flutter
 publish_to: none
@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:       # Required for every Flutter project
     sdk: flutter # Required for every Flutter project
+  english_words: ^4.0.0
 
 dev_dependencies:
   flutter_test:

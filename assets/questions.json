@@ -122,7 +122,7 @@
 			},
 			"white": {
 				"answer":"silently-stubborn",
-				"definition":""
+				"definition":"quietly performed or carried on in an unyielding, obstinate, or persistent manner"
 			},
 			"yellow": {
 				"answer":"flighty",
@@ -188,7 +188,7 @@
 			},
 			"white": {
 				"answer":"easygoing",
-				"definition":"relaxed and tolerant in approach or manne"
+				"definition":"relaxed and tolerant in approach or manner"
 			},
 			"yellow": {
 				"answer":"carefree",
@@ -202,11 +202,11 @@
 		"choices": {
 			"red": {
 				"answer":"critical of others",
-				"definition":""
+				"definition":"inclined to criticize other people severely and unfavorably"
 			},
 			"blue": {
 				"answer":"overly sensitive",
-				"definition":""
+				"definition":"too easily bothered, upset, offended, etc"
 			},
 			"white": {
 				"answer":"shy",
@@ -228,15 +228,15 @@
 			},
 			"blue": {
 				"answer":"detail conscious",
-				"definition":""
+				"definition":"showing or acting with care and concern for details"
 			},
 			"white": {
 				"answer":"a good listener",
-				"definition":""
+				"definition":"someone who actively listens to others"
 			},
 			"yellow": {
 				"answer":"a party person",
-				"definition":""
+				"definition":"someone that likes to enjoy themselves"
 			}
 		},
 		"definitions": true
@@ -253,7 +253,7 @@
 				"definition":"not willing to forgive or excuse people's faults or wrongdoings"
 			},
 			"white": {
-				"answer":"unmotiviated",
+				"answer":"unmotivated",
 				"definition":"not having interest in or enthusiasm for something, especially work or study"
 			},
 			"yellow": {
@@ -312,7 +312,7 @@
 		"choices": {
 			"red": {
 				"answer":"strong-willed",
-				"definition":""
+				"definition":"having a vigorous, independent will"
 			},
 			"blue": {
 				"answer":"respectful",
@@ -324,7 +324,7 @@
 			},
 			"yellow": {
 				"answer":"fun-loving",
-				"definition":""
+				"definition":"enjoys the pleasures of life"
 			}
 		},
 		"definitions": true
@@ -345,8 +345,8 @@
 				"definition":"lacking in general aim or purpose"
 			},
 			"yellow": {
-				"answer":"an interrpter",
-				"definition":""
+				"answer":"an interrupter",
+				"definition":"one that interrupts"
 			}
 		},
 		"definitions": true
@@ -356,7 +356,7 @@
 		"choices": {
 			"red": {
 				"answer":"independent",
-				"definition":"free from outside control; not depending on another's authority"
+				"definition":"free from outside control; not depending on another person's authority"
 			},
 			"blue": {
 				"answer":"dependable",
@@ -364,7 +364,7 @@
 			},
 			"white": {
 				"answer":"even-tempered",
-				"definition":""
+				"definition":"easygoing; calm"
 			},
 			"yellow": {
 				"answer":"trusting",
@@ -382,7 +382,7 @@
 			},
 			"blue": {
 				"answer":"frequently depressed",
-				"definition":""
+				"definition":"often low in spirits; dejected"
 			},
 			"white": {
 				"answer":"ambivalent",
@@ -466,11 +466,11 @@
 		"choices": {
 			"red": {
 				"answer":"always right",
-				"definition":""
+				"definition":"one who prefers their own ideas and positions"
 			},
 			"blue": {
 				"answer":"guilt prone",
-				"definition":""
+				"definition":"one who assumes their fault too easily"
 			},
 			"white": {
 				"answer":"unenthusiastic",
@@ -492,7 +492,7 @@
 			},
 			"blue": {
 				"answer":"well-behaved",
-				"definition":""
+				"definition":"having good manners and acting properly"
 			},
 			"white": {
 				"answer":"accepting",
@@ -522,7 +522,7 @@
 			},
 			"yellow": {
 				"answer":"a show-off",
-				"definition":""
+				"definition":"someone who deliberately behaves in such a way as to attract attention"
 			}
 		},
 		"definitions": true
@@ -532,7 +532,7 @@
 		"choices": {
 			"red": {
 				"answer":"task-oriented",
-				"definition":""
+				"definition":"focusing on the completion of particular tasks as a measure of success"
 			},
 			"blue": {
 				"answer":"sincere",
@@ -558,7 +558,7 @@
 			},
 			"blue": {
 				"answer":"hard to please",
-				"definition":""
+				"definition":"requiring more than usually expected or thought due, demanding"
 			},
 			"white": {
 				"answer":"lazy",
@@ -588,7 +588,7 @@
 			},
 			"yellow": {
 				"answer":"a performer",
-				"definition":""
+				"definition":"one who performs, accomplishes, or fulfills; especially, one who shows skill and training in any art"
 			}
 		},
 		"definitions": true
@@ -602,11 +602,11 @@
 			},
 			"blue": {
 				"answer":"self-righteous",
-				"definition":""
+				"definition":"having or characterized by a certainty, especially an unfounded one, that one is totally correct or morally superior"
 			},
 			"white": {
 				"answer":"self-depreciating",
-				"definition":""
+				"definition":"belittling or undervaluing oneself; excessively modest."
 			},
 			"yellow": {
 				"answer":"disorganized",
@@ -642,7 +642,7 @@
 		"choices": {
 			"red": {
 				"answer":"intimidating",
-				"definition":"righten or overawe (someone), especially in order to make them do what one wants"
+				"definition":"frighten or overawe (someone), especially in order to make them do what one wants"
 			},
 			"blue": {
 				"answer":"careful",
@@ -654,7 +654,7 @@
 			},
 			"yellow": {
 				"answer":"afraid to face facts",
-				"definition":""
+				"definition":"fearful to admit that something is true"
 			}
 		},
 		"definitions": true
